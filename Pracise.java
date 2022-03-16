@@ -11,24 +11,124 @@ public class Pracise {
 		
 		Scanner sc=new Scanner(System.in);
 		
-		int a,b;
 		
-		a=sc.nextInt();
-		b=sc.nextInt();
-		int j=0;
-		while(b<0 || b==0) 
-			b=sc.nextInt();
-			for (int i=0;i<b;i++) {
-				j=j+a+i;
+		
+		double N=sc.nextDouble();
+		if(N>=0 && N<=1000000.00) {
+			
+			
+			if(N%100) {
+				
 			}
-			System.out.println(j);
 			
+		}
+		
+	//Done	
+//		double R=sc.nextDouble();
+//		
+//		double result=3.14159*(R*R);
+//		System.out.printf("A=%.4f \n",result);
+//		
+		//1011 Done
+//		double R;
+//		R=sc.nextDouble();
+//		
+//		double result=(4/3.0)*3.14159*(R*R*R);
+//		  System.out.printf("VOLUME = %.3f\n", (4 * 3.14159 * Math.pow(R, 3.0)) / 3);
+//		  
+//		
+		
+		
+		//Done
+//		int N=sc.nextInt();
+//		int c,d,e,f;
+//		if(N>1 && N<1000) {
+//			for (int i=1;i<=5;i++) {
+//				c=i*i;
+//				d=i*i*i;
+//				
+//				System.out.print(i+" "+c+" "+d+"\n");
+//				
+//				e=c+1;
+//				f=d+1;
+//				System.out.print(i+" "+e+" "+f+"\n");
+//				
+//				
+//				
+//			}
+//		}
+//	
+		
+		
+		
+		//Done
+//		
+//		int N=sc.nextInt();
+//		
+//		if(N>1 && N <1000) {
+//			for (int i=1;i<=N;i++) {
+//				System.out.print(i+" "+i*i+" "+i*i*i+"\n");
+//				
+//				
+//			}
+//		}
+//			for (int j=1;j<=N;j++) {
+//				System.out.println(j*j+" ");
+//			}
+//			for(int o=1;o<=N;o++) {
+//				System.out.println(o*o*o+" ");
+//			}
+//		}
+		
+		
+		
+//			b=sc.nextInt();
+//		int j=0;
+//		while(b<0 || b==0) 
+//			b=sc.nextInt();
+//			for (int i=0;i<b;i++) {
+//				j=j+a+i;
+//			}
+//			System.out.println(j);
+//			
 			
+//		
+//		
+//		
+//		
+//		System.out.println("hello");
+//			
+//		int a,b;
+		
+//		a=sc.nextInt();
 		
 		
 		
+		//dONE
+		//int x,y;
+	//y=sc.nextInt();
 		
-		System.out.println("hello");
+//		for (int i=1;i<=y;i++) {
+//			x=sc.nextInt();
+//			if(x>0) {
+//				if (x%2==0) {
+//					System.out.println("EVEN POSITIVE");
+//				}else {
+//					System.out.println("ODD POSITIVE");
+//				}
+//				
+//			}else if(x<0) {
+//				if (x%2!=0) {
+//					System.out.println("ODD NEGATIVE");
+//				}else {
+//					System.out.println("EVEN NEGATIVE");
+//				}
+//			}else if(x==0) {
+//				System.out.println("NULL");
+//			}
+//			
+//		
+//		}
 	
 //		int X;
 //		while(true) {
