@@ -10,19 +10,30 @@ public class Pracise {
 	public static void main(String [] args) {
 		
 		Scanner sc=new Scanner(System.in);
+	
 		
-		
-		
-		double N=sc.nextDouble();
-		if(N>=0 && N<=1000000.00) {
-			
-			
-			if(N%100) {
-				
-			}
-			
+		float S = 0;
+		for (float i = 1; i <= 100; i++) {
+			S += (1 / i);
 		}
-		
+		System.out.printf("%.2f\n",S);
+	
+		// Done 1141
+//	int age,totalN=0,totalAge=0;
+//	
+//	float average;
+//	
+//	while(((age=sc.nextInt())>=0)) {
+//		totalAge+=age;
+//		totalN+=1;
+//	}
+//		
+//		average = (float)((float)totalAge / (totalN));
+//	System.out.printf("%.2f",average);
+//	
+//	
+//	
+	
 	//Done	
 //		double R=sc.nextDouble();
 //		
