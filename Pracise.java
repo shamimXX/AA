@@ -7,17 +7,114 @@ public class Pracise {
 	public Pracise() {
 		// TODO Auto-generated constructor stub
 	}
-	public static void main(String [] args) {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
 		
-		Scanner sc=new Scanner(System.in);
 	
 		
-		float S = 0;
-		for (float i = 1; i <= 100; i++) {
-			S += (1 / i);
+		
+
+		int N, M, sum = 0 ;
+		boolean perfect=false ;
+		N = sc.nextInt();
+
+		for (int i = 1; i <= N; i++) {
+			M = sc.nextInt();
+			
+			for (int j=1;j<M;j++) {
+				if( M % j == 0) {
+					
+					sum+=j;
+			
+				}
+				
+			}	
+		
+			if(sum==M) {
+				perfect=true;
+				
+			}else {
+				perfect=false;
+			}
+			sum=0;
+			
+			if(perfect) {
+				System.out.println(M+" eh perfeito");
+			}else {
+				System.out.println(M+" nao eh perfeito");
+			}
 		}
-		System.out.printf("%.2f\n",S);
-	
+		
+		
+
+//		int N,X,j;
+//		
+//		N=sc.nextInt();
+//		
+//		for (int i=1;i<=N;i++) {
+//			
+//			X=sc.nextInt();
+//			
+//			boolean isPrim=true;
+//			
+//			for (j=2 ; j<X; j++) {
+//				if(X % j == 0) {
+//					isPrim=false;
+//					
+//				}
+//				
+//			}
+//			
+//			if(isPrim) {
+//				System.out.println(X+ " eh primo");
+//			}else {
+//				System.out.println(X+ " nao eh primo");
+//			}
+//			
+//		}
+//		
+
+//		int N,X;
+//		
+//		N=sc.nextInt();
+//		
+//		for(int i=1;i<=N;i++) {
+//			
+//			
+//			X=sc.nextInt();
+//			boolean isPrim=true;
+//			for (int  j=2;j<X;j++) {
+//				if(N%X==0) {
+//					isPrim=false;
+//				}
+//			}
+//			if(isPrim) {
+//				System.out.println(N+" eh primo");
+//			}else {
+//				System.out.println(N+" nao eh primo");
+//			}
+//			
+//		}
+//		
+
+//		int N=sc.nextInt();
+//		
+//		for (int i=1;i<=N;i++) {
+//			
+//			if(N%i==0) {
+//				System.out.println(i);
+//			}
+//		}
+//	
+//		
+//		float S = 0;
+//		for (float i = 1; i <= 100; i++) {
+//			S += (1 / i);
+//		}
+//		System.out.printf("%.2f\n",S);
+
 		// Done 1141
 //	int age,totalN=0,totalAge=0;
 //	
@@ -33,14 +130,14 @@ public class Pracise {
 //	
 //	
 //	
-	
-	//Done	
+
+		// Done
 //		double R=sc.nextDouble();
 //		
 //		double result=3.14159*(R*R);
 //		System.out.printf("A=%.4f \n",result);
 //		
-		//1011 Done
+		// 1011 Done
 //		double R;
 //		R=sc.nextDouble();
 //		
@@ -48,9 +145,8 @@ public class Pracise {
 //		  System.out.printf("VOLUME = %.3f\n", (4 * 3.14159 * Math.pow(R, 3.0)) / 3);
 //		  
 //		
-		
-		
-		//Done
+
+		// Done
 //		int N=sc.nextInt();
 //		int c,d,e,f;
 //		if(N>1 && N<1000) {
@@ -69,10 +165,8 @@ public class Pracise {
 //			}
 //		}
 //	
-		
-		
-		
-		//Done
+
+		// Done
 //		
 //		int N=sc.nextInt();
 //		
@@ -90,9 +184,7 @@ public class Pracise {
 //				System.out.println(o*o*o+" ");
 //			}
 //		}
-		
-		
-		
+
 //			b=sc.nextInt();
 //		int j=0;
 //		while(b<0 || b==0) 
@@ -102,7 +194,7 @@ public class Pracise {
 //			}
 //			System.out.println(j);
 //			
-			
+
 //		
 //		
 //		
@@ -110,15 +202,13 @@ public class Pracise {
 //		System.out.println("hello");
 //			
 //		int a,b;
-		
+
 //		a=sc.nextInt();
-		
-		
-		
-		//dONE
-		//int x,y;
-	//y=sc.nextInt();
-		
+
+		// dONE
+		// int x,y;
+		// y=sc.nextInt();
+
 //		for (int i=1;i<=y;i++) {
 //			x=sc.nextInt();
 //			if(x>0) {
@@ -140,7 +230,7 @@ public class Pracise {
 //			
 //		
 //		}
-	
+
 //		int X;
 //		while(true) {
 //			X=sc.nextInt();
@@ -159,8 +249,8 @@ public class Pracise {
 //			}
 //			
 //		}
-		
-		//Done
+
+		// Done
 //		int N;
 //		N=sc.nextInt();
 //		
@@ -187,9 +277,8 @@ public class Pracise {
 //			a=a+2;
 //			
 //		}
-		
-	
-		//Done
+
+		// Done
 //		int a,b,c,d;
 //		a=b=c=d=0;
 //		while(true) {
@@ -211,8 +300,8 @@ public class Pracise {
 //		System.out.println("MUITO OBRIGADO\n" + "Alcool: "+b+"\n"+ "Gasolina: "+c+ " \n"+ "Diesel: "+d);	
 //		
 //		
-		
-		//Done
+
+		// Done
 //		int X,Y,sum=0;
 //		X=sc.nextInt();
 //		Y=sc.nextInt();
@@ -230,7 +319,7 @@ public class Pracise {
 //			}
 //		}
 //	}
-		//Done
+		// Done
 //		int X,Y,sum=0;
 //		
 //		X=sc.nextInt();
@@ -254,8 +343,7 @@ public class Pracise {
 //			sum=0;
 //			System.out.println(sum);
 //		}
-		
-		
+
 //		int x=sc.nextInt();
 //		int j,k;
 //		
@@ -275,7 +363,7 @@ public class Pracise {
 //			
 //		}
 //		
-	//Done	
+		// Done
 //		while(true) {
 //			
 //		int pass=2002,num;
@@ -289,11 +377,8 @@ public class Pracise {
 //			
 //		}
 //		
-		
-		
-		
-		
-		//Done
+
+		// Done
 //		while(true) {
 //			
 //			int x,y;
@@ -312,9 +397,8 @@ public class Pracise {
 //			
 //		}
 //		
-		
-		
-		//Not Done
+
+		// Not Done
 //		int X,Y;
 //		
 //		
@@ -337,7 +421,7 @@ public class Pracise {
 //			}
 //			
 //		}
-		
+
 //		boolean t=true;
 //		int sum=0;
 //		while(t) {
@@ -354,8 +438,8 @@ public class Pracise {
 //				
 //		}
 //		
-		
-		//Done
+
+		// Done
 //		int N;
 //		int start,end;
 //		
@@ -385,8 +469,7 @@ public class Pracise {
 //			System.out.println(odd);
 //			
 //		}
-		
-		
+
 //     int I,J,a=7,b;
 //         
 //         for (I=1;I<=9;I=I+2){
@@ -395,9 +478,8 @@ public class Pracise {
 //             }
 //             a=a+2;
 //         }
-		
-		
-		//Done
+
+		// Done
 //		int I,J,a=7,b;
 //		for (I=1;I<=9;I=I+2) {
 //			for (b=1,J=a;b<=3;J--,b++) {
@@ -407,8 +489,8 @@ public class Pracise {
 //			a=a+2;
 //			
 //		}
-		
-		//Done
+
+		// Done
 //		int I,J;
 //		for (I=1;I<=9;I=I+2) {
 //			for (J=7;J>=5;J--) {
@@ -416,8 +498,8 @@ public class Pracise {
 //			}
 //		}
 //		
-		
-		//Done
+
+		// Done
 //		int i,j;
 //		for (i=1,j=60;j>=0;i=i+3,j=j-5) {
 //			System.out.println(i+"  "+j);
@@ -425,14 +507,7 @@ public class Pracise {
 //		}
 //		
 //		
-		
-		
-		
-		
-		
-		
-		
-		
+
 //		int n=0;
 //		
 //		int a=0;
@@ -455,8 +530,8 @@ public class Pracise {
 //			
 //			
 //		}
-		
-		//Done
+
+		// Done
 //		int a=0,highest=0,position=0,X=4;
 //		for (int i=1;i<=X;i++) {
 //			a=sc.nextInt();
@@ -473,8 +548,7 @@ public class Pracise {
 //			
 //		}
 //		System.out.print(highest+" \n"+position+"\n");
-		
-		
+
 //		
 //		float a,b,c;
 //		double result=0;
@@ -489,10 +563,7 @@ public class Pracise {
 //			
 //		}
 //		
-		
-		
-		
-		
+
 //		Done
 //		int N=sc.nextInt();
 //		if(N>2 &&N<1000) {
@@ -501,10 +572,8 @@ public class Pracise {
 //			}
 //			
 //		}
-		
-		
-		
-		//done
+
+		// done
 //		int N=sc.nextInt();
 //		for (int i=1;i<10000;i++) {
 //			if(i%N==2) {
@@ -513,8 +582,7 @@ public class Pracise {
 //		}
 //		
 //		
-		
-		
+
 //		not done
 //	int N,a;
 //	N=sc.nextInt();
@@ -534,7 +602,7 @@ public class Pracise {
 //		}
 //		
 //	}
-	//done	
+		// done
 //		int N=sc.nextInt();
 //		
 //		if(N>=5 && N<=2000) {
@@ -546,8 +614,7 @@ public class Pracise {
 //			}
 //		}
 //		
-		
-		
+
 //		int in=0,out=0,X;
 //		
 //		int N=sc.nextInt();
@@ -566,7 +633,7 @@ public class Pracise {
 //		}
 //		System.out.printf(in+" in\n"+out+" out\n");
 //		
-		
+
 //		int x,y,sum=0,i;
 //		int max,min;
 //		x=sc.nextInt();
@@ -612,12 +679,8 @@ public class Pracise {
 //		System.out.println(total+"\n");
 //		
 //		
-		
-		
-		
-		
-		
-		//not done
+
+		// not done
 //		float N1,N2,N3,N4;
 //		N1=sc.nextFloat();
 //		N2=sc.nextFloat();
@@ -659,9 +722,7 @@ public class Pracise {
 //		System.out.printf("MEDIA = %.1f",result);
 //
 //		
-		
-		
-		
+
 //		float A,B;
 //		
 //		
@@ -674,7 +735,7 @@ public class Pracise {
 //		
 //		
 //		
-		
+
 //		int a,even=0,odd=0,posi=0,negative=0;
 //		for (int i=1;i<=5;i++) {
 //			a=sc.nextInt();
@@ -701,7 +762,7 @@ public class Pracise {
 //		System.out.println("nega "+even);
 //		
 //		
-		
+
 //		int a,total=0;
 //		for (int i=1;i<=5;i++) {
 //			a=sc.nextInt();
@@ -712,7 +773,7 @@ public class Pracise {
 //		}
 //		System.out.println(total+" valors pares");
 //		
-		
+
 //		float n,total=0,average=0;
 //		int totalNum=0;
 //		for(int i=1;i<=6;i++) {
@@ -727,7 +788,7 @@ public class Pracise {
 //		System.out.print(totalNum+ " valores positivos\n");
 //		System.out.printf("%.1f\n",average);
 //		
-		
+
 //		double a;
 //		int sum=0;
 //		for (int i=1;i<=6;i++) {
@@ -738,19 +799,14 @@ public class Pracise {
 //		}
 //		System.out.println(sum+" valores positivos");
 //		
-		
-	
-		
-		
-		
+
 //		for (int i=1;i<=100;i++) {
 //			if(i%2==0) {
 //				System.out.println(i);
 //			}
 //		}
 //		
-		
-		
+
 //		
 //		int n=sc.nextInt();
 //		
@@ -821,9 +877,7 @@ public class Pracise {
 //			break;
 //		}
 //		
-		
-		
-		
+
 //		double A,B,C;
 //		
 //		A=sc.nextDouble();
@@ -846,8 +900,7 @@ public class Pracise {
 //		System.out.println(s4);
 //		
 //		
-		
-		
+
 //		double m;
 //		double n=sc.nextFloat();
 //		if(n>=0 && n<=2000.00) {
@@ -866,8 +919,7 @@ public class Pracise {
 //			String s=String.format("R$ %.2f", m);
 //			System.out.println(s);
 //		}
-		
-		
+
 //	
 //		
 //		int n=sc.nextInt();
@@ -890,19 +942,7 @@ public class Pracise {
 //		}else{
 //		    System.out.println("DDD nao cadastrado");
 //		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 //		String s=sc.nextLine();
 //		
 //		if(s.equalsIgnoreCase("vertebrado")) {
@@ -944,20 +984,7 @@ public class Pracise {
 //		}
 //		
 //		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 //		float sallery=0;
 //		sallery=sc.nextFloat();
 //		float bonus=0;
@@ -1014,7 +1041,7 @@ public class Pracise {
 //			System.out.println(s1);
 //			System.out.println("Em percentual: 4 %");
 //		}
-		
+
 //		int iniHour,iniMinute,endHour,endMinute,dif;
 //		
 //		iniHour=sc.nextInt();
@@ -1042,11 +1069,7 @@ public class Pracise {
 //		else if(a>b) {
 //			System.out.println("O JOGO DUROU " +(24-a-b) +" HORA (S)");
 //		}
-		
-		
-		
-		
-		
+
 //		double a,b,c;
 //		a=sc.nextDouble();
 //		b=sc.nextDouble();
@@ -1074,7 +1097,7 @@ public class Pracise {
 //		if(a==b && a!=c || a==c && a !=b || b==c && b!=a ) {
 //			System.out.println("TRIANGULO ISOSCELES");
 //		}
-		
+
 //		
 //		int A,B;
 //		A=sc.nextInt();
@@ -1086,7 +1109,7 @@ public class Pracise {
 //		else {
 //			System.out.println("Nao sao Multiplos");
 //		}
-		
+
 //		float x,y,z,peri,area;
 //		x=sc.nextFloat();
 //		y=sc.nextFloat();
@@ -1101,7 +1124,7 @@ public class Pracise {
 //			area=(float)0.5*(x+y)*z;
 //			System.out.println("Area = "+area);
 //		}
-		
+
 //		 double a =sc.nextDouble();
 //	        double b =sc.nextDouble();
 //	        if ((a == 0.0) && b == 0.0) {
@@ -1119,7 +1142,7 @@ public class Pracise {
 //	        } else if ((a > 0) && (b < 0)) {
 //	            System.out.println("Q4");
 //	        }
-		
+
 //		 double X,Y;
 //		X=sc.nextDouble();
 //		Y=sc.nextDouble();
@@ -1145,8 +1168,7 @@ public class Pracise {
 //		else if (Y<0 && X<0) {
 //			System.out.println("Q4");
 //		}
-		
-		
+
 //		float N1=sc.nextFloat();
 //		float N2=sc.nextFloat();
 //		float N3=sc.nextFloat();
@@ -1166,8 +1188,7 @@ public class Pracise {
 //			System.out.println("Aluno em exame");
 //		}
 //		
-		
-		
+
 //		int X=sc.nextInt();
 //		int Y = sc.nextInt();
 //		double r=0;
@@ -1204,8 +1225,7 @@ public class Pracise {
 //			System.out.println(st5);
 //			
 //		}
-		
-		
+
 //		if (X==1) {
 //			r=Y*4.00;
 //			System.out.println("Total: R$ "+r);
@@ -1227,9 +1247,7 @@ public class Pracise {
 //			System.out.println("Total: R$ "+r);System.out.println(r);
 //		}
 //		
-		
-		
-		
+
 //		int A =sc.nextInt();
 //		int B=sc.nextInt();
 //		int C =sc.nextInt();
@@ -1246,9 +1264,7 @@ public class Pracise {
 //		 else {
 //			 System.out.println("valores nao aceitos");
 //		 }
-		
-		
-		
+
 	}
 
 }
